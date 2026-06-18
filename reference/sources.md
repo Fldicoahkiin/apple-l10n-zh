@@ -6,6 +6,7 @@ Order of authority: the **live macOS system UI** in Simplified Chinese > Apple's
 
 - Apple Style Guide — https://support.apple.com/guide/applestyleguide/welcome/web
 - Apple Style Guide (PDF) — https://help.apple.com/pdf/applestyleguide/en_US/apple-style-guide.pdf
+- macOS User Guide (zh-CN) — register check: second person is 你, not 您 — https://support.apple.com/zh-cn/guide/mac-help/welcome/mac
 
 ## Apple — localization file format
 
@@ -20,6 +21,8 @@ Order of authority: the **live macOS system UI** in Simplified Chinese > Apple's
 - Activity Monitor User Guide — process info — https://support.apple.com/zh-cn/guide/activity-monitor/view-information-about-processes-actmntr1001/mac
 - Activity Monitor User Guide — diagnostics: 取样进程 (Sample Process) — https://support.apple.com/zh-cn/guide/activity-monitor/actmntr2225/mac
 - Numbers 使用手册 — chart "数据序列" (Series) — https://support.apple.com/zh-cn/guide/numbers/welcome/mac
+- macOS User Guide — Finder/Dock terms: 废纸篓 (Trash) / 移到废纸篓 / 清倒废纸篓 / 程序坞 (Dock) — https://support.apple.com/zh-cn/guide/mac-help/mchlp1093/mac
+- iPhone User Guide (zh-CN) — "App" kept untranslated in shipped UI — https://support.apple.com/zh-cn/guide/iphone/welcome/ios
 
 ## Cross-check only (not Apple)
 

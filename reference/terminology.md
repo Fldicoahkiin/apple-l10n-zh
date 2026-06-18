@@ -21,6 +21,8 @@ A **verified cache** of Apple's official zh-Hans terms for common macOS/iOS UI c
 | Cut | 剪切 | |
 | Paste | 粘贴 | |
 | Delete | 删除 | |
+| Move to Trash | 移到废纸篓 | Trash = 废纸篓, not 垃圾桶/回收站 |
+| Empty Trash | 清倒废纸篓 | 清倒, not 清空 |
 | Cancel | 取消 | |
 | Apply | 应用 | |
 | Reset | 重置 | |
@@ -37,6 +39,7 @@ A **verified cache** of Apple's official zh-Hans terms for common macOS/iOS UI c
 | English | zh-Hans | Note |
 |---|---|---|
 | About X | 关于 X | |
+| App / Apps | App | keep English, not 应用/应用程序; plural is bare "App" too (退出所有 App) — see pitfalls |
 | Documentation | 文档 | not 文稿 |
 | Settings / Preferences | 设置 / 偏好设置 | macOS 13+ uses 设置 |
 | Inspector | 检查器 | |

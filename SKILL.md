@@ -53,6 +53,7 @@ Apple already shipped a Chinese term for almost every UI concept — the job is 
 3. **Markdown links**: translate the label, keep the URL unchanged — `[Documentation](https://…)` → `[文档](https://…)`.
 4. **Punctuation**: full-width Chinese marks in Chinese text (：，。（）「」？！), but half-width for code tokens and their parentheses — `中断 (SIGINT)`, not `中断（SIGINT）`.
 5. **CJK / Latin spacing**: one space between a Chinese run and an adjacent Latin word or number — `显示 CPU 使用率`, `vmmap 路径`. A standalone unit like `30s` stays `30s`.
+6. **Second person → 你, not 您**: Apple's zh-Hans addresses the user as **你**, declarative and imperative alike (macOS User Guide: 「你的隐私和安全至关重要」). The "professional tone = 您" instinct is wrong here. Drop a possessive the context already scopes — `输入许可证密钥`, not `输入你的许可证密钥`. See [reference/pitfalls.md](reference/pitfalls.md).
 
 ## Terminology
 

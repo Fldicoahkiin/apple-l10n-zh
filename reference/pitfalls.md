@@ -36,6 +36,13 @@ Apple Developer documentation (developer.apple.com) is **English-only**, so capa
 
 The test is whether a single settled Chinese rendering exists, not whether it came from a shipped UI. Flag only when the term is genuinely unsettled (Hardened) — a confidently-filled *unsettled* term is the "looks decisive, reads as guessed" failure; reflexively flagging a *settled* one (QoS) just nags the user.
 
+## 您 → 你 (second person)
+
+Apple's Simplified Chinese addresses the user as **你**, not the formal **您** — across UI and docs, declarative and imperative alike (macOS User Guide: 「你可以立即设置并开始使用新 Mac」, 「你的隐私和安全至关重要」). The habitual "professional = 您" instinct is the trap: a translator working from general localization norms reaches for 您 and breaks the Apple register. Two follow-ons:
+
+- Keep it **你** consistently — don't split by sentence mood (imperative 你 / declarative 您 is a fabricated distinction; Apple uses 你 for both).
+- Drop a possessive the context already makes obvious — a license-key field prompt is 输入许可证密钥, not 输入你的许可证密钥.
+
 ## Resident Memory → 常驻内存
 
 RSS = Resident Set Size = 常驻内存大小. Both 常驻内存 and 驻留内存 are understood; **常驻内存** is more common in zh tech writing.
@@ -43,6 +50,14 @@ RSS = Resident Set Size = 常驻内存大小. Both 常驻内存 and 驻留内存
 ## Save → 存储, Copy → 拷贝
 
 Apple macOS uses **存储** (not 保存) and **拷贝** (not 复制). Finder → **访达**.
+
+## App → App, not 应用 / 应用程序
+
+Apple's current zh-Hans keeps **App** in English — "设定 App 和服务", "在 App 资源库中查找和使用 App", "退出所有 App". 应用 / 应用程序 reads as generic, non-Apple localization. The plural is the bare "App" too (no 应用程序), with the CJK/Latin one-space rule around it: `App 行为`, `默认 App`, `退出所有 App`. (This is the same reason a section header is `App 行为`, not `应用行为`.)
+
+## Trash → 废纸篓, not 垃圾桶 / 回收站
+
+Apple macOS: **废纸篓**. "Move to Trash" → **移到废纸篓**, "Empty Trash" → **清倒废纸篓** (清倒, not 清空). 垃圾桶 / 回收站 are the Windows/Android habits — wrong for macOS. (Same page also confirms Dock → 程序坞, "Put Back" → 放回原处.)
 
 ## "..." → "…"
 
