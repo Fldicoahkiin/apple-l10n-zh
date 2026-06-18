@@ -18,6 +18,7 @@ Order of authority: the **live macOS system UI** in Simplified Chinese > Apple's
 
 - Activity Monitor User Guide — memory terms (内存 / 常驻 / 虚拟 / 联动 / 已使用的交换) — https://support.apple.com/zh-cn/guide/activity-monitor/view-memory-usage-actmntr1004/mac
 - Activity Monitor User Guide — process info — https://support.apple.com/zh-cn/guide/activity-monitor/view-information-about-processes-actmntr1001/mac
+- Activity Monitor User Guide — diagnostics: 取样进程 (Sample Process) — https://support.apple.com/zh-cn/guide/activity-monitor/actmntr2225/mac
 - Numbers 使用手册 — chart "数据序列" (Series) — https://support.apple.com/zh-cn/guide/numbers/welcome/mac
 
 ## Cross-check only (not Apple)

@@ -1,6 +1,6 @@
 # Terminology: English → Simplified Chinese (zh-Hans)
 
-Apple's official zh-Hans terms for common macOS/iOS UI concepts. When unsure, check the live macOS system UI or the Apple zh-CN guides in [sources.md](sources.md). Apple wins over literal or Microsoft translations.
+A **verified cache** of Apple's official zh-Hans terms for common macOS/iOS UI concepts — each was checked against Apple's live UI or zh-CN docs, not a dictionary. It is not the whole language: if a term isn't here, or the UI context is ambiguous, verify it against the live macOS system UI or the Apple zh-CN guides in [sources.md](sources.md), then add it here so the next run hits the cache. Apple wins over literal or Microsoft translations.
 
 ## Contents
 - Common actions
@@ -75,6 +75,9 @@ Apple's official zh-Hans terms for common macOS/iOS UI concepts. When unsure, ch
 | Signature | 签名 | code signature |
 | Entitlements | 授权 | or keep "Entitlements" for dev audiences |
 | Priority / Nice | 优先级 / Nice | keep Nice (Unix term) |
+| Sample Process | 取样进程 | the "Sample" action; 取样, not 样本 (a data point) — see pitfalls |
+| Hardened (Runtime) | flag / keep English | no settled zh term (dev docs are EN-only); community 强化运行时/加固运行时 compete — flag, see pitfalls |
+| QoS: User Interactive / User Initiated / Utility / Background / Default | 用户交互 / 用户发起 / 实用工具 / 后台 / 默认 | fill directly; settled WWDC-localized renderings (not shipped UI, but not a flag case) |
 
 ## Charts & data export (Numbers)
 
@@ -84,7 +87,7 @@ Apple's official zh-Hans terms for common macOS/iOS UI concepts. When unsure, ch
 | Value | 值 | |
 | Time | 时间 | |
 | Timeline | 时间线 | |
-| Sample (data point) | 样本 | Instruments 样本列表; not 采样 (the act) |
+| Sample (data point) | 样本 | Instruments 样本列表; not 采样 (the act) or 取样 (the Sample Process action) |
 
 ## Logs (Console)
 
