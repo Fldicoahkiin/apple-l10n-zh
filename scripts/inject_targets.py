@@ -2,8 +2,9 @@
 """Inject zh-Hans <target> elements into an Xcode-exported XLIFF.
 
 Reads translations from a JSON map (trans-unit id -> target text), inserts a
-<target> after each matching <source>, and verifies that every target keeps the
-same set of printf-style format specifiers as its source.
+<target state="translated"> after each matching <source> (matching how Xcode
+marks a finished translation), and verifies that every target keeps the same
+set of printf-style format specifiers as its source.
 
 Usage:
     python3 inject_targets.py <file.xliff> <translations.json>
@@ -78,7 +79,7 @@ def inject(xliff_path, translations):
             if target:
                 if source_text is not None and specifiers(source_text) != specifiers(target):
                     mismatches.append((current_id, specifiers(source_text), specifiers(target)))
-                out.append(f"{INDENT}<target>{escape(target)}</target>\n")
+                out.append(f'{INDENT}<target state="translated">{escape(target)}</target>\n')
                 injected += 1
             elif not current_id.startswith("CFBundle") and current_id not in ("", "NSHumanReadableCopyright"):
                 skipped.append(current_id)

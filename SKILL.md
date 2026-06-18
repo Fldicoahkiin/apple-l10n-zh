@@ -27,15 +27,16 @@ Translate by adding a `<target>` after each `<source>`:
 ```xml
 <trans-unit id="Save" xml:space="preserve">
   <source>Save</source>
-  <target>存储</target>
+  <target state="translated">存储</target>
   <note from="auto-generated">A button that saves the current color setting.</note>
 </trans-unit>
 ```
 
-- A unit with no `<target>` falls back to the source at runtime — nothing breaks, so leaving a string untranslated is safe.
+- Mark a finished translation `state="translated"` (Xcode shows it as done). A unit with no `<target>` falls back to the source at runtime — nothing breaks, so leaving a string untranslated is safe.
 - Leave brand names and empty-source units alone (e.g. `CFBundleName`, copyright).
 - The maintainer merges `<target>`s back into the real String Catalog with `xcodebuild -importLocalizations`. You only ever edit the xliff; never touch `Source Contents`.
 - **Always read each unit's `<note>`** — it gives the real UI context and frequently decides the correct term.
+- **Plural strings** (String Catalog `%#@…@` variations) export as separate trans-units with ids like `key|==|plural.other`. zh-Hans has a single CLDR plural category — translate only the `plural.other` unit (keep the `%#@…@` / `%lld` tokens intact); `plural.one` / `few` / `many` don't apply to Chinese.
 
 ## Translation workflow (per string)
 
@@ -54,6 +55,7 @@ Apple already shipped a Chinese term for almost every UI concept — the job is 
 4. **Punctuation**: full-width Chinese marks in Chinese text (：，。（）「」？！), but half-width for code tokens and their parentheses — `中断 (SIGINT)`, not `中断（SIGINT）`.
 5. **CJK / Latin spacing**: one space between a Chinese run and an adjacent Latin word or number — `显示 CPU 使用率`, `vmmap 路径`. A standalone unit like `30s` stays `30s`.
 6. **Second person → 你, not 您**: Apple's zh-Hans addresses the user as **你**, declarative and imperative alike (macOS User Guide: 「你的隐私和安全至关重要」). The "professional tone = 您" instinct is wrong here. Drop a possessive the context already scopes — `输入许可证密钥`, not `输入你的许可证密钥`. See [reference/pitfalls.md](reference/pitfalls.md).
+7. **Counts**: Chinese has no plural inflection — a counted noun takes a measure word, default **个** (`%lld 个进程`, not `%lld 进程`). Pick the noun's conventional measure word and keep it consistent across the app.
 
 ## Terminology
 

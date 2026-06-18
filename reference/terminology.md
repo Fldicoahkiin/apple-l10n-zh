@@ -114,6 +114,10 @@ A **verified cache** of Apple's official zh-Hans terms for common macOS/iOS UI c
 
 Keep the `(SIG…)` token half-width with a leading space.
 
+## Keyboard / modifier keys
+
+Apple keeps modifier-key names in English, paired with the symbol: **Command ⌘**, **Option ⌥** (or Alt), **Control ⌃** (or Ctrl), **Shift ⇧**. Caps Lock is the exception — **大写锁定键 ⇪**.
+
 ## Keep in English (do not translate)
 
-CPU, GPU, QoS, PID, JSON, CSV, SSD, RAM, URL, vmmap, dylib, plist, Info.plist, Nice (Unix), and all `SIG*` signal names.
+CPU, GPU, QoS, PID, JSON, CSV, SSD, RAM, URL, vmmap, dylib, plist, Info.plist, Nice (Unix), Command / Option / Control / Shift (modifier keys), and all `SIG*` signal names.
